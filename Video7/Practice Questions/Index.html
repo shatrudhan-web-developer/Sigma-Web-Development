@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Input Practice</title>
+  </head>
+  <body>
+    <h1>Ivaan Kumar</h1>
+    <form action="post">
+      <!-- Text Input Practice -->
+
+      <div>
+        <label for="username">Enter your username : </label>
+        <input type="text" id="username" placeholder="Enter your username" />
+      </div>
+      <div>
+        <label for="email">Enter your email id : </label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email id"
+          autofocus
+        />
+      </div>
+
+      <!-- Radio Button Practice -->
+
+      <div>
+        <label for="gender">Gender : </label>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+      </div>
+      <div>
+        <label for="married">Marital Status : </label>
+        <input type="radio" id="single" name="marital" value="single" />
+        <label for="single">Single</label>
+        <input type="radio" id="married" name="marital" value="married" />
+        <label for="married">married</label>
+      </div>
+
+      <!-- Checkbox Practice -->
+
+      <div>
+        <input type="checkbox" id="terms" name="terms" value="yes" />
+        <label for="terms">I agree to the Terms & Conditions</label>
+      </div>
+
+      <!-- Textarea Practice -->
+
+      <div>
+        <label for="address">Enter your address : </label>
+      </div>
+      <div>
+        <textarea id="address" rows="4" cols="40"></textarea>
+      </div>
+
+      <!-- Dropdown Practice -->
+
+      <div>
+        <label for="state">Select your state : </label>
+        <select name="state">
+          <option value="disabled">-- Select your state --</option>
+          <option value="bihar">bihar</option>
+          <option value="mp">MP</option>
+          <option value="up">UP</option>
+        </select>
+      </div>
+
+      <!-- Password Input Practice -->
+
+      <div>
+        <label for="password">Enter your password : </label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your password"
+        />
+      </div>
+
+      <!-- Date Input -->
+
+      <div>
+        <label for="date">Enter your Date of Birth : </label>
+        <input type="date" id="dob" name="dob" required />
+      </div>
+
+      <!-- File Upload Input -->
+
+      <div>
+        <label for="Document">Upload your document : </label>
+        <input
+          type="file"
+          id="document"
+          name="document"
+          accept=".pdf,.jpg,.png"
+          required
+        />
+      </div>
+
+      <!-- Submit + Reset Button -->
+
+      <div>
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </div>
+    </form>
+  </body>
+</html>

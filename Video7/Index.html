@@ -9,8 +9,13 @@
     <h1>Form to apply for Post Matric Scholarship</h1>
     <form action="post">
       <div>
-        <label for="username">Ente your username :</label>
-        <input type="text" id="username" placeholder="Enter your username" />
+        <label for="username">Ente your username : </label>
+        <input
+          type="text"
+          id="username"
+          placeholder="Enter your username"
+          autofocus
+        />
       </div>
       <div>
         <input type="radio" id="male" name="gender" value="male" />
@@ -34,6 +39,14 @@
           <option value="banana">Banana</option>
           <option value="cherry">Cherry</option>
         </select>
+      </div>
+      <div>
+        <label for="password">Enter your password : </label>
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter your password"
+        />
       </div>
     </form>
   </body>
