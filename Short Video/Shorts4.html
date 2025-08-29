@@ -1,0 +1,29 @@
+<!-- How to Upload a File in HTML | File Upload Input Example | HTML Form Tutorial -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Create Document Upload Section</h3>
+    <form action="post">
+      <div>
+        <label for="document">Upload your document : </label>
+        <input
+          type="file"
+          id="document"
+          name="document"
+          accept=".pdf,.png,.jpg"
+          required
+        />
+      </div>
+      <div>
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </div>
+    </form>
+  </body>
+</html>
