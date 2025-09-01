@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Input Types</title>
+  </head>
+  <body>
+    <h1>HTML Input Types</h1>
+    <div>
+      <label for="name">Enter your name : </label>
+      <input type="text" id="name" placeholder="Enter your name" />
+    </div>
+
+    <div>
+      <label for="password">Enter your password : </label>
+      <input
+        type="password"
+        name="password"
+        placeholder="Enter your password"
+      />
+    </div>
+
+    <div>
+      <input type="checkbox" id="check" name="check" value="yes" />
+      <label for="check">All condition sutiesefied</label>
+    </div>
+    <div>
+      <label for="age">Selet your age : </label>
+      <input
+        type="number"
+        id="age"
+        name="age"
+        placeholder="Select your age"
+        min="18"
+        max="60"
+      />
+    </div>
+    <div>
+      <label for="Choose">Choose your colors : </label>
+      <input type="color" id="Choose" name="Choose" />
+    </div>
+    <div>
+      <label for="time">Select time : </label>
+      <input
+        type="time"
+        id="time"
+        name="time"
+        value="12:00:00"
+        min="01:00"
+        max="12:00"
+      />
+    </div>
+    <div>
+      <label for="date">Select date : </label>
+      <input
+        type="date"
+        id="date"
+        name="date"
+        min="2000-01-01"
+        max="2030-01-01"
+        value="2000-01-01"
+      />
+    </div>
+    <div>
+      <label for="volume">Volume : </label>
+      <input
+        type="range"
+        id="volume"
+        name="volume"
+        min="5"
+        max="100"
+        value="50"
+        step="5"
+      />
+    </div>
+    <div>
+      <label for="gender">Gender : </label>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label>
+    </div>
+    <div>
+      <label for="search">Search box : </label>
+      <input
+        type="search"
+        id="search"
+        name="search"
+        placeholder="Search..."
+        required
+      />
+      <button type="submit">Search</button>
+    </div>
+    <div>
+      <label for="document">Upload your document : </label>
+      <input
+        type="file"
+        id="document"
+        name="document"
+        accept=".pdf,.jpg,.png"
+        required
+      />
+    </div>
+    <div>
+      <input type="submit" />
+      <input type="reset" />
+    </div>
+  </body>
+</html>
