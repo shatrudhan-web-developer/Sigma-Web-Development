@@ -1,0 +1,212 @@
+<!-- Practice - 01 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Details Form</title>
+  </head>
+  <body>
+    <!-- Personal Details -->
+
+    <h1>Student Details Form - Placement</h1>
+    <form action="submit.php" method="post">
+      <div>
+        <label for="name">Name :</label><br />
+        <input type="text" id="name" name="name" />
+      </div>
+
+      <div>
+        <label for="registration">Registration Number :</label><br />
+        <input type="number" id="registration" name="registration" required />
+      </div>
+
+      <div>
+        <label for="email">Email ID :</label><br />
+        <input type="email" id="email" name="email" />
+      </div>
+
+      <div>
+        <label for="student_number">Student Mobile Number :</label><br />
+        <input
+          type="tel"
+          id="student_number"
+          name="student_number"
+          pattern="[0-9]{10}" maxlength="10"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="parent_number">Parents Contact Number :</label><br />
+        <input
+          type="tel"
+          id="parent_number"
+          name="parent_number"
+          pattern="[0-9]{10}" maxlength="10"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="DOB">Date Of Birth(DOB) :</label><br />
+        <input
+          type="date"
+          id="DOB"
+          name="DOB"
+          min="2000-01-01"
+          max="2025-01-01"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="city">City :</label><br />
+        <input type="text" id="city" name="city" />
+      </div>
+
+      <div>
+        <label for="state">State :</label><br />
+        <input type="text" id="state" name="state" />
+      </div>
+
+      <!-- Degree Percentage -->
+
+      <div>
+        <label for="10th_percentage">10th Percentage :</label><br />
+        <input
+          type="number"
+          id="10th_percentage"
+          name="tenth_percentage"
+          min="0"
+          max="100"
+          step="0.01"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="Dep_percentage">Diploma Percentage :</label><br />
+        <input
+          type="number"
+          id="Dep_percentage"
+          name="dep_percentage"
+          min="0"
+          max="100"
+          step="0.01"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="12th_percentage">12th Percentage :</label><br />
+        <input
+          type="number"
+          id="12th_percentage"
+          name="twelth_percentage"
+          min="0"
+          max="100"
+          step="0.01"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="Grad_percentage">Graduation Percentage :</label><br />
+        <input
+          type="number"
+          id="Grad_percentage"
+          name="grad_percentage"
+          min="0"
+          max="100"
+          step="0.01"
+          required
+        />
+      </div>
+
+      <!-- Stream -->
+
+      <div>
+        <label for="stream">Stream :</label><br />
+
+        <input type="radio" id="btech" name="stream" value="B.Tech" />
+        <label for="btech">B.Tech</label><br />
+
+        <input type="radio" id="mca" name="stream" value="MCA" />
+        <label for="mca">MCA</label><br />
+
+        <input type="radio" id="mba" name="stream" value="MBA" />
+        <label for="mba">MBA</label><br />
+
+        <input type="radio" id="stream_other" name="stream" value="Other" />
+        <label for="stream_other">Other</label>
+      </div>
+
+      <!-- Branch -->
+
+      <div>
+        <label for="branch">Branch :</label><br />
+
+        <input type="radio" id="mech" name="branch" value="MECH" />
+        <label for="mech">MECH</label><br />
+
+        <input type="radio" id="ele" name="branch" value="ELE" />
+        <label for="ele">ELE</label><br />
+
+        <input type="radio" id="etc" name="branch" value="ETC" />
+        <label for="etc">ETC</label><br />
+
+        <input type="radio" id="eaca" name="branch" value="EACA" />
+        <label for="eaca">EACA</label><br />
+
+        <input type="radio" id="cse" name="branch" value="CSE" />
+        <label for="cse">CSE</label><br />
+
+        <input type="radio" id="civil" name="branch"  value="CIVIL" />
+        <label for="civil">CIVIL</label><br />
+
+        <input type="radio" id="branch_mba" name="branch" value="MBA" />
+        <label for="branch_mba">MBA</label><br />
+
+        <input type="radio" id="branch_mca" name="branch" value="MCA" />
+        <label for="branch_mca">MCA</label><br />
+
+        <input type="radio" id="branch_other" name="branch" value="Other" />
+        <label for="branch_other">Other</label>
+      </div>
+
+      <!-- Passout Year -->
+
+      <div>
+        <label for="year">Passout Year :</label><br />
+
+        <input type="radio" id="2026" name="year" value="2026" />
+        <label for="2026">2026</label><br />
+
+        <input type="radio" id="2027" name="year" value="2027" />
+        <label for="2027">2027</label><br />
+
+        <input type="radio" id="2028" name="year" value="2028" />
+        <label for="2028">2028</label><br />
+
+        <input type="radio" id="OTher" name="year" value="Other" />
+        <label for="OTher">Other</label>
+      </div>
+
+      <!-- Placement -->
+
+      <div>
+        <label for="placement">Placement :</label><br />
+
+        <input type="radio" id="placed" name="placement" value="PLACED" />
+        <label for="placed">PLACED</label><br />
+
+        <input type="radio" id="unplaced" name="placement" value="UNPLACED" />
+        <label for="unplaced">UNPLACED</label>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!-- HTML Range Input | Create Volume Adjustment Slider with min, max & step -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Volume Arjusment</title>
+  </head>
+  <body>
+    <h1>Volume Arjusment</h1>
+    <form action="submit.php" method="post">
+      <div>
+        <label for="volume">Arjust Volume : </label>
+        <input
+          type="range"
+          id="volume"
+          name="volume"
+          min="5"
+          max="100"
+          value="50"
+          step="5"
+        />
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

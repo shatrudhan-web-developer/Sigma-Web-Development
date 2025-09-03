@@ -1,0 +1,27 @@
+<!-- HTML Time Input | Create Time Picker in Forms with min & max Attributes -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Input</title>
+  </head>
+  <body>
+    <h1>Time Input in HTML</h1>
+    <form action="submit.php" method="post">
+      <div>
+        <label for="Time">Set Time : </label>
+        <input
+          type="time"
+          id="Time"
+          name="Time"
+          value="12:00"
+          min="01:00"
+          max="12:00"
+        />
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
