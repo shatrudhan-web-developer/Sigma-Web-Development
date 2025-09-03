@@ -1,0 +1,95 @@
+<!-- CSS Selectors Master Class -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Element Selector -->
+    <style>
+        div {
+            /* background-color: red; */
+        }
+
+         /* Class Selector */
+        .red{
+            background-color: red;
+        }
+
+        /* ID Selector */
+        #green{
+            background-color: green;
+        }
+
+        /* Child Selector */
+        div > p {
+            background-color: blue;
+        }
+
+        /* Descendant Selector */
+
+        span p{
+            background-color: aqua;
+            color: blue;
+        }
+
+        /* Universal Selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        a:visited{
+            color: blue;
+        }
+
+        a:active{
+            background-color: black;
+        }
+
+        a:hover{
+            background-color: yellow;
+        }
+
+        a:active{
+            color: red;
+        }
+
+        a:link{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="red">
+        I am first div
+    </div>
+    <hr>
+    <div id="green">
+        I am second div
+    </div>
+    <hr>
+    <span  class="blue">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque omnis perspiciatis aliquid excepturi exercitationem aut?</p>
+        <p>I am a friendly and empathetic person, and I enjoy helping others and making new friends.</p>
+    </span>
+    <hr>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sint.</p>
+    </div><br>
+<hr>
+    <div>
+        <label for="my_portfolio">My Portfolio Link :</label>
+        <a target="_blank" href="https://shatrudhan-portfolio.netlify.app">Click here</a><br>
+
+        <label for="my_github_account">GitHub Account :</label>
+        <a target="_blank" href="https://github.com/shatrudhanwebdev-glitch">Click here</a><br>
+
+        <label for="my_linkedin_account">Linkedin Account :</label>
+        <a target="_blank" href="https://linkedin.com/in/shatrudhan-kumar-0774a134a">Click hhere</a>
+    </div>
+</body>
+</html>
