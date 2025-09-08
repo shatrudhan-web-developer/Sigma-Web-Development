@@ -1,0 +1,85 @@
+<!-- CSS Specificity Cascode -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* The specificity of this selectoer is 1  */
+      h1 {
+        color: red;
+      }
+
+      /* The specificity of this selectoer is 10 */
+      .yellow {
+        color: aqua;
+      }
+
+      /* The specificity of this selectoer is 1 + 10 */
+      h1.yellow {
+        color: blueviolet;
+      }
+
+      /* The specificity of this selectoer is 10 */
+      .cred {
+        color: yellow;
+      }
+
+      /* The specificity of this selectoer is 10 */
+      .cpurple {
+        color: blue;
+      }
+
+      /* The specificity of this selectoer is 10 */
+      .footer li {
+        color: red;
+        font-weight: bold;
+      }
+
+      [data-text="a"] {
+        color: maroon;
+      }
+
+      /* This
+        is
+        an
+        example
+        of
+        Attributr
+        Selector.
+        The
+        specificity
+        of
+        this
+        selector
+        is
+        10 */
+      [data-text="attribute_selector"] {
+        color: aqua;
+      }
+
+      /* The specificity of this selector is 1 + 10 + 10 + 10 + 10 = 41  */
+      a.harryclass.rohan-class[href]:hover {
+  color: red;
+}
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1 class="yellow cred cpurple" data-text="a">
+        Today learn about CSS Specificity Cascode.
+      </h1>
+    </div>
+
+    <hr />
+
+    <div class="footer">
+      <ol>
+        <li>Attribute Selector :</li>
+        <p data-text="attribute_selector">This is a Attribute Selector.</p>
+      </ol>
+    </div>
+  </body>
+</html>
