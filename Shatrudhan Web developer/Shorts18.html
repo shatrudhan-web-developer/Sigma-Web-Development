@@ -1,0 +1,53 @@
+<!-- Toggle Sidebar With Details -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        details {
+            width: 100px;
+            height: 200px;
+            border: 1px solid black;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 10px auto;
+            transition: width 0.3s ease;
+        }
+        details:not([open]) {
+            width: 80px;
+        }
+        summary {
+            background: #dadada;
+            text-align: right;
+            cursor: pointer;
+        }
+        ul {
+            list-style: none;
+            width: 10px;
+        }
+        li {
+            margin: 5px 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <details>
+        <summary>&#9776;</summary>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Service</li>
+            <li>Contact</li>
+        </ul>
+    </details>
+</body>
+</html>
