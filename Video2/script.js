@@ -1,1 +1,1 @@
-alert("Welcome to Shatrudhan Web Developer Official Website")
+alert("Welcome to Shatrudhan Daiya Web Development")

@@ -1,5 +1,17 @@
 {
     "configurations": [
+        
+        {
+            "name": "Attach to Chrome",
+            "port": 9222,
+            "request": "attach",
+            "type": "chrome",
+            "webRoot": "${workspaceFolder}"
+        },
+
+
+
+
         {
             "type": "msedge",
             "name": "http://127.0.0.1:3002/Video23/Index.html",
